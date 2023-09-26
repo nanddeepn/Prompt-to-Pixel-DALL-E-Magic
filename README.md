@@ -13,8 +13,8 @@ Whether you're a designer seeking inspiration, a content creator looking for uni
 
 ## Key Features
 
--- Seamless Prompt Generation: Input your prompts or ideas naturally, and let DALL-E do the rest.
--- Easy Export and Sharing: Save your artwork with ease and share it across various platforms.
+- Seamless Prompt Generation: Input your prompts or ideas naturally, and let DALL-E do the rest.
+- Easy Export and Sharing: Save your artwork with ease and share it across various platforms.
 
 ## The Hack Team
 
