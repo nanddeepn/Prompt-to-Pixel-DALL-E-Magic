@@ -24,4 +24,4 @@ Whether you're a designer seeking inspiration, a content creator looking for uni
 
 ## Video
 
-[![Watch the video](./media/video-preview.png)](https://youtu.be/vt5fpE0bzSY)
+[![Watch the video](./media/video-preview.png)](https://youtu.be/ZfF8RVBWVIA)
