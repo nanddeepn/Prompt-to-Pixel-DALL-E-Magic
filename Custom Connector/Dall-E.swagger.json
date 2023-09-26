@@ -1,0 +1,110 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Dall-E",
+    "description": "Dall-E"
+  },
+  "host": "contoso.openai.azure.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/openai/images/generations:submit": {
+      "post": {
+        "summary": "Prompt",
+        "description": "Prompt",
+        "operationId": "Prompt",
+        "parameters": [
+          {
+            "name": "api-version",
+            "default": "2023-06-01-preview",
+            "in": "query",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "prompt": {
+                  "type": "string",
+                  "description": "prompt"
+                },
+                "size": {
+                  "type": "string",
+                  "description": "size"
+                },
+                "n": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "n"
+                }
+              },
+              "default": {
+                "prompt": "elephant playing cricket",
+                "size": "1024x1024",
+                "n": 1
+              }
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        }
+      }
+    },
+    "/openai/operations/images/8ef590bd-0042-4dc1-9920-c80a4a59b290": {},
+    "/openai/operations/images/{image-id}": {
+      "get": {
+        "summary": "Get Image",
+        "description": "Get Image",
+        "operationId": "GetImage",
+        "parameters": [
+          {
+            "name": "image-id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "default": "2023-06-01-preview"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        }
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {
+    "api_key": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "Api-Key"
+    }
+  },
+  "security": [],
+  "tags": []
+}
